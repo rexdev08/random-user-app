@@ -1,0 +1,91 @@
+.Card{
+    width: min(280px, 90%);
+    height: 400px;
+    background-color: #fff;
+    padding-inline: .5rem;
+    border-radius: .5rem;
+    background-color: #fafafaa9;
+    backdrop-filter: blur(3px);
+    box-shadow: 5px 3px 25px 5px rgba(0, 0, 0, 0.61);
+    // overflow: hidden;
+    
+
+    // &__ImageContainer{
+    //     background-color: red;
+    // }
+
+    
+
+    &__Image{
+        height: 110px;
+        border-radius: 50%;
+        border: 7px solid rgb(18, 102, 109);
+        // margin-bottom: .5rem;
+        margin-top: 2rem;
+    }
+
+    &__text{
+        margin-top: .5rem;
+           height: 15%; 
+           display: flex;
+           flex-flow: column;
+           justify-content: center;
+           align-items: center;
+          
+    }
+
+    &__Name,&__gender{
+        font-size:clamp(12px, 10vw, 24px);
+        font-weight: 500;
+    }
+
+
+    &__Contact{
+        height: 30%;
+        // background-color: cyan;
+    }
+
+    &__Show{
+        font-size:clamp(.8rem, 7vw, 1.1rem);
+        font-weight: 600;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 20%;
+        width: 100%;
+        // background-color: red;
+    }
+
+    &__Buttons{
+        // background-color: green;
+        margin-top: 1rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__Button{
+        font-size:clamp(12px, 20vw, 50px);
+        cursor: pointer;
+    }
+
+
+    &__Click{
+        margin-top: .5rem;
+        width: 60px;
+        height: 30px;
+        border:none;
+        font-size: 20px;
+        border-radius: .3rem;
+        padding: .2rem;
+        background-color: rgb(18, 102, 109);
+        color: #fafafa;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(7, 62, 67);
+        }
+    }
+}
